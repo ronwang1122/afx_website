@@ -280,3 +280,13 @@ a {
     text-decoration: none !important;
     box-shadow: none;
 }
+
+.link-pair { 
+  display: flex;
+  align-items: baseline; /* This fixes vertical alignment */
+  margin-bottom: 1rem;
+}
+.link-label { width: 140px; flex-shrink: 0; }
+.link-desc { padding-left: 10px; }
+
+
