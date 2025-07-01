@@ -17,6 +17,15 @@ a {
     line-height: 1.6;
   }
   
+  .profile-pic {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
   .container {
     width: 90%;
     max-width: 1100px;
@@ -182,5 +191,32 @@ a {
     font-size: 0.8rem;
     color: #999;
     margin-top: 0.5rem;
+  }
+  
+  .about-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-columns .column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .about-columns h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+  
+  .about-columns p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
   }
   
