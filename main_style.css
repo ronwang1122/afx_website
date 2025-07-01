@@ -87,6 +87,42 @@ a {
   object-fit: cover;
   z-index: -2;
 }
+/* Hero with Image - Fixed Centering */
+.hero--image {
+  position: relative;
+  height: 50vh;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero--image .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero--image .background-image img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive adjustment */
+@media (max-aspect-ratio: 3/2) {
+  .hero--image .background-image img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .overlay {
   position: absolute;
@@ -219,4 +255,28 @@ a {
     line-height: 1.6;
     margin-bottom: 1rem;
   }
-  
+
+
+/* ====================== */
+/* AFX Contact Form Link  */
+/* ====================== */
+.container .form-cta {
+    margin: 2rem 0;
+    text-align: left; /* Aligns with corporate document flow */
+    padding-left: 1.5rem;
+}
+
+.container .contact-link {
+    display: inline-block;
+    padding: 0.625rem 1.25rem; /* More compact */
+    color: #3a5169 !important; 
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.25px;
+    border-color: #e0e6ed;
+    background-color: #fff;
+    border-radius: 4px; /* Sharp corners */
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+    box-shadow: none;
+}
